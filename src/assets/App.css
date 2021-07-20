@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  height: 100vh;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+  background-color: #bfedef;
+}
+
+input {
+  border-radius: 10px;
+  border-color: transparent;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+button {
+  border-radius: 10px;
+  padding: 0.25rem;
+  border-color: black;
+  background-color: transparent;
+}
+
+fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 1rem;
+}
+
+.locationForm {
+  margin-bottom: 1rem;
+}
+
+.weatherTable {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.weatherColumn {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+@media only screen and (max-width: 786px) {
+  .weatherTable {
+    flex-direction: column;
+  }
+  .weatherColumn {
+    padding-top: 1rem;
+  }
+}
+
+.weatherTitle {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.weatherItem {
+  margin-top: 0.5rem;
+  display: flex;
+}
+
+.weatherItemLabel {
+  padding-right: 0.25rem;
+}
+
+.formInputError {
+  color: red;
+  font-weight: 600;
+}
